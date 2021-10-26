@@ -11,6 +11,7 @@ file(GLOB SRC_FILES      ${CMAKE_SOURCE_DIR}/src/*.cpp)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
+add_compile_options(-std=c++1z)
 add_executable(xml_parser ${SRC_FILES})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
